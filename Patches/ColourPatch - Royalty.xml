@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+			<operations>
+				<li Class="PatchOperationTest">
+				  <xpath>/Defs/TerrainDef[@Name = "FineTileStoneBase"]</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+				  <xpath>*/TerrainDef[defName = "FineTileSandstone"]/color</xpath>
+				  <value><color>(87,71,63)</color></value>
+				</li>
+				<li Class="PatchOperationReplace">
+				  <xpath>*/TerrainDef[defName = "FineTileGranite"]/color</xpath>
+				  <value><color>(75,84,92)</color></value>
+				</li>
+				<li Class="PatchOperationReplace">
+				  <xpath>*/TerrainDef[defName = "FineTileLimestone"]/color</xpath>
+				  <value><color>(232,225,202)</color></value>
+				</li>
+				<li Class="PatchOperationReplace">
+				  <xpath>*/TerrainDef[defName = "FineTileSlate"]/color</xpath>
+				  <value><color>(64,64,64)</color></value>
+				</li>
+				<li Class="PatchOperationReplace">
+				  <xpath>*/TerrainDef[defName = "FineTileMarble"]/color</xpath>
+				  <value><color>(255,255,255)</color></value>
+				</li>
+			</operations>
+	</Operation>
+
+</Patch>
